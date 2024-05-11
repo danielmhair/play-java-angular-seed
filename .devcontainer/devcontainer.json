@@ -5,7 +5,30 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build": {
 		"dockerfile": "Dockerfile"
-	}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"DavidAnson.vscode-markdownlint",
+				"vscjava.vscode-java-pack",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"Oracle.oracle-java",
+				"redhat.java",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-test",
+				"Angular.ng-template",
+				"Mikael.Angular-BeastCode",
+				"dbaeumer.vscode-eslint",
+				"EditorConfig.EditorConfig",
+				"johnpapa.Angular2",
+				"alexiv.vscode-angular2-files",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
@@ -13,7 +36,11 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": {
+		"command": [
+			"cd ui && npm ci"
+		]
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},

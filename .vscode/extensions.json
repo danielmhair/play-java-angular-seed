@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "ms-azuretools.vscode-docker",
+        "vscjava.vscode-java-pack",
+        "visualstudioexptteam.vscodeintellicode",
+        "oracle.oracle-java",
+        "redhat.java",
+        "davidanson.vscode-markdownlint",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test",
+        "angular.ng-template",
+        "mikael.angular-beastcode",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "johnpapa.angular2",
+        "alexiv.vscode-angular2-files",
+        "github.copilot",
+        "github.copilot-chat"
+    ]
+}

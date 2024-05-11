@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
+# Install Java and SBT dependencies
 RUN sudo apt-get update && \
     sudo apt-get install apt-transport-https curl gnupg -yqq && \
     echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list && \
@@ -9,3 +10,12 @@ RUN sudo apt-get update && \
     sudo apt-get update && \
     sudo apt install default-jdk -yqq && \
     sudo apt-get install sbt
+
+# Install NodeJS v22.1.0
+RUN sudo apt-get update && \
+    sudo apt-get install -yqq curl && \
+    curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
+    sudo apt-get install -yqq nodejs
+
+# Update to latest npm
+RUN sudo npm install -g npm@latest
