@@ -25,7 +25,11 @@
 				"johnpapa.Angular2",
 				"alexiv.vscode-angular2-files",
 				"GitHub.copilot",
-				"GitHub.copilot-chat"
+				"GitHub.copilot-chat",
+				"scala-lang.scala",
+				"scalameta.metals",
+				"alssys.interactive-scala",
+				"itryapitsin.Sbt"
 			]
 		}
 	},
@@ -38,7 +42,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": {
 		"command": [
-			"cd ui && npm ci"
+			"cd ui && npm ci && npx playwright install && npx playwright install-deps"
 		]
 	}
 

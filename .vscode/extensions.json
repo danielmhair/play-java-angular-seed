@@ -16,6 +16,10 @@
         "johnpapa.angular2",
         "alexiv.vscode-angular2-files",
         "github.copilot",
-        "github.copilot-chat"
+        "github.copilot-chat",
+        "scala-lang.scala",
+        "scalameta.metals",
+        "alssys.interactive-scala",
+        "itryapitsin.sbt"
     ]
 }
